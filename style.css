@@ -1,0 +1,178 @@
+/* 
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+button {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  background-color: white;
+  height: 90vh;
+  width: 25vw;
+  border-radius: 20px;
+  overflow: hidden;
+}
+/* 
+.sub-container {
+  height: 100%;
+  width: 100%;
+} */
+
+/* .header__Image {
+  height: 30%;
+  width: 25vw;
+} */
+
+.image__Header {
+  width: 100%;
+  object-fit: contain;
+}
+
+.header__Content,
+.content__Lists {
+  margin: 40px;
+}
+
+.header__Title {
+  font-weight: 900;
+}
+
+.header__Description {
+  font-size: 14px;
+  margin-top: 20px;
+  color: gray;
+}
+
+.content__List {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 10px;
+}
+
+.content__List a {
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.content__ListDetails {
+  display: flex;
+  align-items: center;
+}
+
+.content__ListDetail {
+  display: flex;
+}
+
+.content__ListDetail p {
+  padding: 2px;
+}
+
+.listDetail__Title {
+  font-weight: 900;
+}
+
+.content__ListDetail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.content__Buttons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__Buttons button {
+  margin: 5px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.content__ProceedButton {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px gray;
+}
+
+.content__CancelButton {
+  background-color: transparent;
+  border: none;
+  color: gray;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content__ProceedButton:hover {
+  background-color: hsl(224, 23%, 55%);
+  transform: translate3d(0px, -2px, 0px);
+}
+
+.content__CancelButton:hover {
+  color: black;
+}
+
+.content__List a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 37vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 60vw;
+  }
+}
